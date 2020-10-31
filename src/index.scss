@@ -1,0 +1,35 @@
+$WHITE: #fbfbfb;
+$ORANGE: #fbb711;
+$GRAY: #a39f9e;
+$LIGHT_GRAYISH: #ddcaab;
+$GRAYISH_BLACK: #605956;
+$BLACK: #1A1513;
+$BROWNISH_ORANGE: #B47240;
+$NEON_GREEN: rgb(77,233,165);
+$RED: rgb(239,38,42);
+$YELLOW: rgb(255,237,101);
+$LIGHT_GRAY: rgb(248,249,252);
+*{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: fit-content;
+  width: 100vw;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.show,.collapsing{
+  padding: 15px;
+  box-shadow: 0px 100px 1000px #dbdbdb;
+  width: 100%;
+}
+.btn-outline-dark{
+  border-color: black;
+}
+.btn-dark{
+  background-color: black;
+  color: white;
+}

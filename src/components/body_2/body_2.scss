@@ -1,0 +1,97 @@
+$WHITE: #fbfbfb;
+$ORANGE: #fbb711;
+$GRAY: #a39f9e;
+$LIGHT_GRAYISH: #ddcaab;
+$GRAYISH_BLACK: #605956;
+$BLACK: #1A1513;
+$BROWNISH_ORANGE: #B47240;
+$NEON_GREEN: rgb(77,233,165);
+$RED: rgb(239,38,42);
+$YELLOW: rgb(255,237,101);
+$LIGHT_GRAY: rgb(248,249,252);
+.description{
+    padding: 100px 0 0;
+    margin: 0;
+
+    .des{
+        b{
+            color: $ORANGE;
+        }
+        p{
+            color: $GRAY;
+        }
+    }
+    .col-lg-2{
+        background-color: rgb(248,249,252);
+        border-radius: 30px;
+    }
+    .button-div{
+        background-color: white;
+        border-radius: 30px;
+        width: 150px;
+        height: 150px;
+        color: $GRAY;
+        position: relative;
+        .circle{
+            width: 50%;
+            padding-top: 50%;
+            background-color: #1A1513;
+            border-radius: 50%;
+        }
+    }
+    .chat-bubble{
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .long-mess{
+        width: 88%;
+        height: 50px;
+        border:3px solid rgb(225,225,227);
+        margin-top: 10px;
+        border-radius: 0 15px 15px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 90%;
+            height: 10px;
+            background-color: rgb(225,225,227);
+        }
+    }
+    .short-mess{
+        width: 70%;
+        height: 50px;
+        border:3px solid rgb(225,225,227);
+        margin-top: 10px;
+        border-radius: 0 15px 15px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 90%;
+            height: 10px;
+            background-color: rgb(225,225,227);
+        }
+    }
+    .example-figure{
+        background-color: $LIGHT_GRAY;
+        width: 100%;
+        border-radius: 10px;
+        height: 50vh;
+    }
+    @media only screen and (max-width: 680px){
+        .button-div{
+            width: 140px;
+            height: 140px;
+        }
+    }
+    @media only screen and (max-width: 680px){
+        .button-div{
+            width: 140px;
+            height: 140px;
+        }
+    }
+
+}

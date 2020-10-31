@@ -1,0 +1,42 @@
+$WHITE: #fbfbfb;
+$ORANGE: #fbb711;
+$GRAY: #a39f9e;
+$LIGHT_GRAYISH: #ddcaab;
+$GRAYISH_BLACK: #605956;
+$BLACK: #1A1513;
+$BROWNISH_ORANGE: #B47240;
+$NEON_GREEN: rgb(77,233,165);
+$RED: rgb(239,38,42);
+$YELLOW: rgb(255,237,101);
+$LIGHT_GRAY: rgb(248,249,252);
+nav{
+  height: 15vh;
+  min-height: 100px;
+  .logo {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  div{
+    background-color: white;
+  }
+  .nav-item{
+    .nav-link{
+      color: $BLACK;
+    }
+    .underline{
+      width: inherit;
+      height: 3px;
+      background-color: $GRAY;
+      //padding-right: 8px;
+      //padding-left: 8px;
+    }
+  }
+  .current{
+    .underline{
+      background-color: $NEON_GREEN;
+    }
+  }
+  z-index: 100;
+}

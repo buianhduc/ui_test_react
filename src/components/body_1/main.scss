@@ -1,0 +1,67 @@
+$WHITE: #fbfbfb;
+$ORANGE: #fbb711;
+$GRAY: #a39f9e;
+$LIGHT_GRAYISH: #ddcaab;
+$GRAYISH_BLACK: #605956;
+$BLACK: #1A1513;
+$BROWNISH_ORANGE: #B47240;
+$NEON_GREEN: rgb(77,233,165);
+$RED: rgb(239,38,42);
+$YELLOW: rgb(255,237,101);
+$LIGHT_GRAY: rgb(248,249,252);
+.main{
+  margin-top: 30px;
+  ul {
+    list-style-type: none;
+  }
+  .item{
+
+    .img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .item-description{
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-flow: column;
+      p{
+        font-size: 0.85rem;
+      }
+      h5{
+        font-size: 1rem;
+        margin-bottom: 2px;
+      }
+    }
+    .img-container{
+      img{
+        width: 40px;
+        height: 40px;
+      }
+      width: 60px !important;
+      height: 60px !important;
+      background-color: $LIGHT_GRAY;
+      border-radius: 10px;
+    }
+    .features-active{
+      background-color: $YELLOW !important;
+    }
+    margin-bottom: 20px;
+  }
+  .features{
+    b{
+      color: $RED;
+      font-size: 0.85em;
+      margin-bottom: 20px;
+    }
+  }
+  .by-industry{
+    b{
+      color: $RED;
+      font-size: 0.85em;
+      margin-bottom: 20px;
+    }
+  }
+  box-shadow:  0px 50px 44px -100px rgb(242,242,241);
+}
