@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import {NavBar} from './components/navbar/navbar.js'
-import {Body2} from "./components/body_2/body_2.js";
-import {Body1} from "./components/body_1/body_1.js";
+import {Body2} from "./components/description/description.js";
+import {Body1} from "./components/main/main.js";
 
 class Page extends React.Component{
   render(){

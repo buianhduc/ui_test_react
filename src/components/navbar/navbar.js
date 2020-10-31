@@ -48,7 +48,7 @@ export class NavBar extends React.Component{
 						</li>
 					</ul>
 					<div className="sign-up-sign-in pull-right">
-						<button className="sign-in btn btn-outline-dark pull-right">
+						<button className="sign-in btn btn-outline-dark pull-right mr-1">
 							Log In
 						</button>
 						<button className="sign-up btn btn-primary btn-dark">
