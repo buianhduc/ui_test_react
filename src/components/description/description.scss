@@ -30,20 +30,24 @@ $LIGHT_GRAY: rgb(248,249,252);
         border-radius: 30px;
         width: 150px;
         height: 150px;
-        color: $GRAY;
+        color: $GRAYISH_BLACK;
         position: relative;
         .circle{
             width: 50%;
             padding-top: 50%;
-            background-color: #1A1513;
+            //background-color: #1A1513;
             border-radius: 50%;
+            border: 3px solid $GRAYISH_BLACK;
         }
+        box-shadow: 3px 3px 20px 0px rgb(181,182,183);
     }
     .chat-bubble{
         background-color: white;
         border-radius: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
+        box-shadow: 3px 3px 20px 0px rgb(181,182,183);
+
     }
     .long-mess{
         width: 88%;
