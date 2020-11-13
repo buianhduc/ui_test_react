@@ -10,82 +10,49 @@ export class Body1 extends React.Component{
                 PRODUCT FEATURES
             </b>
             <div className="container row">
-                <div className="col-6">
+                <div className="col-lg-6">
                     <div className="row item">
-                        <div className="col-lg-2">
-                            <div className="img-container features-active"><img src="./asset/menu.svg" alt=""/></div>
-                        </div>
+                    {
+                    this.props.menu_data.map((item, index) => {
+                        if(index < this.props.menu_data.length/2)
+                        return(
+                            <div className="row mb-4" >
+                                    <div className="col-lg-2">
+                                <div className={item.active ? ' img-container features-active' : 'img-container'}><img src={process.env.PUBLIC_URL+item.imgSrc} alt="bruh"/></div>
+                                </div>
 
-                        <div className = "col-lg-10 item-description">
-                            <h5>Chatbot Builder</h5>
-                            <p>Build your codeless chat bot with Watermelon</p>
-                        </div>
-
-                    </div>
-                    <div className="row item">
-                        <div className="col-lg-2">
-                            <div className=" img-container">
-                                <img src="./asset/dashboard.svg" alt=""/>
+                            <div className = "col-lg-10 item-description">
+                                <h5>{item.followDescription.header}</h5>
+                                <p>{item.followDescription.description}</p>
                             </div>
-                        </div>
-
-
-                        <div className="col-lg-10 item-description">
-                            <h5>Central Dashboard</h5>
-                            <p>Manage your service team based on data</p>
-                        </div>
-
-                    </div>
-                    <div className="row item">
-                        <div className ="col-lg-2">
-                            <div className="img-container">
-                                <img src="./asset/statistics.svg" alt=""/>
                             </div>
-                        </div>
-                        <div className="col-lg-10 item-description">
-                            <h5>Statistics</h5>
-                            <p>Create a 360 degrees customer profile</p>
-                        </div>
-
+                            
+                        )
+                        })
+                    }
                     </div>
+                    
                 </div>
-                <div className="col-6">
+                <div className="col-lg-6">
                     <div className="row item">
-                        <div className="col-lg-2">
-                            <div className="img-container">
-                                <img src="./asset/chat.svg" alt=""/>
-                            </div>
-                        </div>
-                        <div className="col-lg-10 item-description">
-                            <h5>Livechat</h5>
-                            <p>Centralize your most used channels</p>
-                        </div>
-
-                    </div>
-                    <div className="row item">
-
-                        <div className="col-lg-2">
-                            <div className="img-container">
-                                <img src="./asset/customer.svg" alt=""/>
-                            </div>
-                        </div>
-                        <div className="col-lg-10 item-description">
-                            <h5>Customer Profiles</h5>
-                            <p>Start an easy going conversation with customers</p>
-                        </div>
-
-                    </div>
-                    <div className="row item">
-                        <div className="col-lg-2">
-                            <div className="img-container">
-                                <img src="./asset/setting.svg" alt=""/>
-                            </div>
-                        </div>
-                        <div className="col-lg-10 item-item-description">
-                            <h5>Integration</h5>
-                            <p>Complete your implementation with the integrations</p>
-                        </div>
-
+                        {
+                            this.props.menu_data.map((item, index) => {
+                                if(index >= this.props.menu_data.length/2)
+                                    return(
+                                        <div className="row mb-4" >
+                                            <div className="col-lg-2">
+                                                <div className={item.active ? ' img-container features-active' : 'img-container'}><img src={process.env.PUBLIC_URL+item.imgSrc} alt="bruh"/></div>
+                                            </div>
+                        
+                                            <div className = "col-lg-10 item-description">
+                                                <h5>{item.followDescription.header}</h5>
+                                                <p>{item.followDescription.description}</p>
+                                            </div>
+                                        </div>
+                
+                                    )
+                            })
+                        }
                     </div>
                 </div>
             </div>

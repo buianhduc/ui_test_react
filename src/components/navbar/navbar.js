@@ -5,10 +5,10 @@ export class NavBar extends React.Component{
 		return(
 			<nav className="navbar navbar-expand-lg static-top">
 				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span className="navbar-toggler-icon"><img src="./asset/hamburgersvg.svg" alt=""/></span>
+					<span className="navbar-toggler-icon"><img src={process.env.PUBLIC_URL+'/asset/hamburgersvg.svg'} alt=""/></span>
 				</button>
 				<div className="logo navbar-brand">
-					<img src="./asset/logo.svg" alt="Watermelon Logo"/>
+					<img src={process.env.PUBLIC_URL+'/asset/logo.svg'} alt="Watermelon Logo"/>
 					<b className="homepage-link ml-1">
 						Watermelon
 					</b>
